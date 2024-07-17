@@ -67,3 +67,10 @@
     height: 3px;
     background: #c7c7c7;
 }
+
+@media screen and (max-width: 700px){
+    .footer{
+        width: 100%;
+        /* border: 1px solid black; */
+    }
+}

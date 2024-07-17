@@ -16,12 +16,12 @@ const Furniture = () => {
                     <p className="more"> <h4>Read More</h4></p>
                     </li>
             </div>
-            <div>
-                <li className="first">
+            <div className="Responsive">
+                <ul className="first">
                     <p className="items"> <h4>5 Items</h4></p>
                     <p className="niture"> <h1>FURNITURE</h1></p>
                     <p className="more"> <h4>Read More</h4></p>
-                </li>
+                </ul>
                 <ul className="second">
                     <li className="cup">
                     <p className="items"> <h4>5 Items</h4></p>

@@ -20,6 +20,7 @@ const Breadcrumps = () => {
             
 
                 <div className="hero-new-products">
+                 
                 <img className="it-image" src={image_1} alt="IT"></img>
                  <div className="hero-new-products-text">
                  <p className="hero-new-products-text-price" style={{ color: 'rgb(67, 147, 174)' }}>Google</p>
@@ -102,6 +103,7 @@ const Breadcrumps = () => {
                </div>
               
              </div>
+             
         //  </div>
     )
 }

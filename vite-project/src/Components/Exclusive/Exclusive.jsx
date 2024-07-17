@@ -49,9 +49,15 @@ const removeFromCart = (productId) => {
             Remove Cart
           </div>
           </div>
+          {/* <button onClick={loadMore} className="btn">
+        LOAD MORE PRODUCTS
+      </button> */}
         </div>
+       
       ))}
+      
     </div>
+    
   );
 };
 

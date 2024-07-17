@@ -8,20 +8,35 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
 
 const localCart = JSON.parse(localStorage.getItem("cart"))
+const cartCount = localCart ?  localCart.length : 0
 
-console.log(localCart.length)
+// console.log(localCart.length)
 const[menu,setMenu] = useState("Home");
     return (
 
        
         <div className='navbar'>
+
             <div className='nav'>
             <img src={cart_img} alt="" />
             </div>
             <div className='second-div'>
+
+            
+        
+
           <div className='nav-logo'>
             <h2>Bandage</h2>
           </div>
+
+          <label class="toggle-button" for="menubar">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+
+        <input className='input_check' type='checkbox' id='menubar'></input>
+        <div className='Navbar'>
           <ul className='nav-menu'>
             <li onClick={()=>{setMenu("Home")}}><Link style={{textDecoration: 'none'}}  to='/'>Home</Link> {menu=== "Home"?<hr />:<></>}</li>
             <li onClick={()=>{setMenu("Products")}}><Link style={{textDecoration: 'none'}} to='/products'>Shop/Products</Link>{menu=== "Products"?<hr />:<></>}</li>
@@ -37,8 +52,9 @@ const[menu,setMenu] = useState("Home");
             <div className='nav-cart-count'>{localCart.length}</div>
             
           </div>
-          <div className='icon'><img src={search_icon} alt="" /></div>
+          <div className='icon'><img src={cartCount} alt="" /></div>
 
+          </div>
           </div>
         </div>
         

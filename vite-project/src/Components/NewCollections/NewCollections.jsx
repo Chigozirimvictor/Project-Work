@@ -1,23 +1,20 @@
-import React from "react";
-import './NewCollections.css'
-// import new_collection from'../Assets/new_collections'
+import "../NewCollections/NewCollections.css";
 
-
-const NewCollections = () => {
-    return(
-        <div className="newcollections">
-
-            {/* <h1>NEW COLLECTIONS</h1>
-            <hr />
-            <div className="collections">
-                {new_collection.map((item,i)=>{
-                    return<item/>
-                })}
-
-            </div> */}
-
-        </div>
-    )
+function NewCollections() {
+  return (
+    <div className="wrapper">
+      <div className="content">
+        <h6>Designing Better Experience</h6>
+        <h2>Problems trying to resolve the conflict between </h2>
+        <p>
+          Problems trying to resolve the conflict between the two major realms
+          of Classical physics:
+        </p>
+        <h3>$16.48</h3>
+        <button>ADD YOUR CALL TO ACTION</button>
+      </div>
+    </div>
+  );
 }
 
-export default NewCollections
+export default NewCollections;

@@ -6,6 +6,7 @@ const LoginSignup = () => {
             <div className="login-container">
                 <h1>Sign Up</h1>
                 <div className="login-fields">
+                    
                     <input type="text" placeholder="Your Name" />
                     <input type="email" placeholder="Email Address" />
                     <input type="password" placeholder="password" />
@@ -14,7 +15,7 @@ const LoginSignup = () => {
                 <p className="login-login">Already have an Account? <span>Login Here</span></p>
                 <div className="login-agree">
                     <input type="checkbox" name="" id="" />
-                    <p>By Continuing, i agrre to use the terms of use & privacy policy</p>
+                    <p>By Continuing, i agree to use the terms of use & privacy policy</p>
                 </div>
             </div>
 
